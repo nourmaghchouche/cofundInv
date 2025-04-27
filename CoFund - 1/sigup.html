@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css"> -->
+<style>
+  .signupPage{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(38, 170, 153, 0.8),rgba(0,0,50,0.8)), url(images/c6.jpg);
+    /* background-image: url(images/c8.jpg); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+  }
+</style>
+
+</head>
+<body>
+
+  <div class="signupPage">
+    <div class="form-box">
+      <form action="" class="login-form" autocomplete="off">
+      <h1 id="title">Get Started Now!</h1>
+      <p class="def" >Enter your Credentials to access your account</p>
+        <div class="input-group">
+          <div class="input-field" id="namefield">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Name">
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email">
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password">
+          </div>
+
+          <div class="input-field" id="phoneFeild">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" placeholder="Phone Number">
+          </div>
+          
+        </div>
+          
+          
+          <div class="btn-field">
+            <button type="submit" class="btn-submit" id="sigmInBtn">SignUp</button>
+          </div>
+          
+          <div class="login-container">
+            <p class="orlog">Or LogIn with</p>
+            <div class="social-login">
+              <Button class="social-button">
+                <img src="images/gog.jpg" alt="Google" class="social-icon" width="15px"><p class="goap">Google</p>
+              </Button>
+              <Button class="social-button">
+                <img src="images/apple.jpg" alt="Apple" class="social-icon" width="15px"><p class="goap">Apple</p>
+              </Button>
+            </div>
+          </div>
+          
+          
+            <div class="switch-form">
+              <p>Already have an account?<a href="#" onclick="registerFunction()">LogIn</a></p>
+            </div>
+      </form>
+
+      <form action="" class="register-form" autocomplete="off">
+        <h1 id="title">welcome Back!</h1>
+        <p class="def" >Enter your Credentials to access your account</p>
+          <br><br><div class="input-groupp">
+            
+  
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Email">
+            </div>
+  
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password">
+            </div>       
+          </div>
+            
+            <div class="btn-field">
+              <button type="submit" class="btn-submit" id="sigmUpBtn">LogIn</button>
+            </div>
+            
+            <div class="login-container">
+              <p class="orlog">Or LogIn with</p>
+              <div class="social-login">
+                <Button class="social-button">
+                  <img src="images/gog.jpg" alt="Google" class="social-icon" width="15px"><p class="goap">Google</p>
+                </Button>
+                <Button class="social-button">
+                  <img src="images/apple.jpg" alt="Apple" class="social-icon" width="15px"><p class="goap">Apple</p>
+                </Button>
+              </div>
+            </div>
+            
+            
+              <div class="switch-form">
+                <p>Don't have an account?<a href="#" onclick="loginFunction()">SignUp</a></p>
+              </div>
+        </form>
+        </div>
+    </div>
+    </div>
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>
+
